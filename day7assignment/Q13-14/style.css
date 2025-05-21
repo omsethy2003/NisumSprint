@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Responsive Gallery */
+.gallery {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* Optional hover zoom on gallery images */
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Transform Box */
+.transform-box {
+  width: 200px;
+  height: 100px;
+  background-color: orange;
+  margin: 40px auto;
+  text-align: center;
+  line-height: 100px;
+  font-weight: bold;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.transform-box:hover {
+  transform: rotate(5deg) scale(1.1) translateY(-10px);
+}

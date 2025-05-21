@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.item {
+  background-color: teal;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  padding: 40px 0;
+  border-radius: 8px;
+}
