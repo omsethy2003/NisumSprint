@@ -1,0 +1,116 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+<!--  <context-param>-->
+<!--    <param-name>appTitle</param-name>-->
+<!--    <param-value>My Web App</param-value>-->
+<!--  </context-param>-->
+
+  <!-- 1. WelcomeServlet -->
+  <servlet>
+    <servlet-name>WelcomeServlet</servlet-name>
+    <servlet-class>Servelets.WelcomeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WelcomeServlet</servlet-name>
+    <url-pattern>/WelcomeServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- 2. UserInputServlet -->
+  <servlet>
+    <servlet-name>UserInputServlet</servlet-name>
+    <servlet-class>Servelets.UserInputServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserInputServlet</servlet-name>
+    <url-pattern>/UserInputServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- 3. GetPostDemoServlet -->
+  <servlet>
+    <servlet-name>GetPostDemoServlet</servlet-name>
+    <servlet-class>Servelets.GetPostServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetPostDemoServlet</servlet-name>
+    <url-pattern>/GetPostDemoServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- 4. DateTimeServlet -->
+  <servlet>
+    <servlet-name>DateTimeServlet</servlet-name>
+    <servlet-class>Servelets.DateTimeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DateTimeServlet</servlet-name>
+    <url-pattern>/DateTimeServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- 5. CookieServlet -->
+  <servlet>
+    <servlet-name>CookieServlet</servlet-name>
+    <servlet-class>Servelets.CookieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CookieServlet</servlet-name>
+    <url-pattern>/CookieServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- 6. ConfigParamServlet -->
+  <servlet>
+    <servlet-name>ConfigParamServlet</servlet-name>
+    <servlet-class>Servelets.ServletConfig</servlet-class>
+    <init-param>
+      <param-name>adminEmail</param-name>
+      <param-value>admin@example.com</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ConfigParamServlet</servlet-name>
+    <url-pattern>/ConfigParamServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- 7. ContextParamServlet -->
+  <servlet>
+    <servlet-name>ContextParamServlet</servlet-name>
+    <servlet-class>Servelets.ContextServletParam</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContextParamServlet</servlet-name>
+    <url-pattern>/ContextParamServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- 8. LoginServlet -->
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>Servelets.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- 9. RedirectServlet -->
+  <servlet>
+    <servlet-name>RedirectServlet</servlet-name>
+    <servlet-class>Servelets.RedirectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RedirectServlet</servlet-name>
+    <url-pattern>/RedirectServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- 10. RequestHeaderServlet -->
+  <servlet>
+    <servlet-name>RequestHeaderServlet</servlet-name>
+    <servlet-class>Servelets.RequestHeaderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RequestHeaderServlet</servlet-name>
+    <url-pattern>/RequestHeaderServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
